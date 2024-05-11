@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivinhe o desenho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="bg-gradient-to-l from-blue-950 to-blue-900 flex justify-center items-center h-screen w-full flex-col">
+    <div
+      class="flex justify-center items-center h-[13rem] w-[45rem] bg-rose-500 mb-[3rem] font-bold text-white text-[7rem] leading-[6.5rem] text-center">
+      ADIVINHE O<br>DESENHO</div>
+    <div class="relative size-[51rem] bg-sky-400 flex justify-center items-center flex-col">
+
+      <canvas class="fixed bg-yellow-50" id="canvas" width="450" height="450"></canvas>
+
+
+      <div class="absolute flex flex-col bg-green-800 w-[48rem] h-[19rem] top-[47.5rem]">
+
+        <div class="w-full h-[4.5rem] bg-green-600">
+          <a href="https://github.com/lucasmartt/gemini-guess-the-drawing" target="_blank"
+            class="cursor-pointer absolute rounded-[.5rem] size-[3.5rem] bg-green-900 right-[.5rem] top-[.5rem]">
+            <img class="absolute top-0 right-0 p-[.5rem]" src="github-mark.svg" alt="">
+          </a>
+          <input class="absolute right-[4.5rem] top-[.5rem] rounded-[.5rem] size-[3.5rem] bg-green-900" id="color"
+            type="color">
+          <input
+            class="absolute right-[8.5rem] top-[.5rem] rounded-[.5rem] size-[3.5rem] bg-green-900 text-center font-bold text-white text-[1.5rem] "
+            id="line" type="number">
+          <button
+            class="absolute right-[12.5rem] top-[.5rem] rounded-[.5rem] h-[3.5rem] w-[7rem] bg-green-900 font-bold text-white text-[1.5rem]"
+            id="clear">Limpar</button>
+        </div>
+
+        <div class="p-[2rem] overflow-y-scroll flex-1">
+          <span class="font-bold text-white text-[2rem]" id="output">
+            Faça um desenho.<br>Você pode limpar a tela, escolher a grossura e a cor do pincel nos botões acima.
+          </span>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="h-[21rem] w-[45rem]"></div>
+  </section>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
