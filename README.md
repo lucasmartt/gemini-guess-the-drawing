@@ -12,4 +12,4 @@ Segunda entrada para o desafio final da imersão de inteligência artificial da 
 
 ---
 
-<img src="" alt="" width="500"/>
+<img src="https://github.com/lucasmartt/gemini-guess-the-drawing/assets/98989695/101238cc-8a26-4878-a6c1-aba7b6c48021" alt="Um desenho simples de uma maçã com um caule e uma folha no topo." width="500"/>
